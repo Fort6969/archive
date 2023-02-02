@@ -1,94 +1,101 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-        background-color: #a067c7;
+<head>
+  <style>
+    /* Default styles */
+    body {
+        background-color: #7a41f4;
+        color: white;
         font-family: Arial, sans-serif;
-        color: white;
-      }
-      header nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      header nav {
-        background-color: #7a5fb5;
+    }
+
+    header {
+        background-color: #7a41f4;
         display: flex;
         justify-content: space-between;
-        padding: 10px;
-      }
-      header nav ul {
-        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav ul {
         list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
         margin: 0;
         padding: 0;
-      }
-      header nav ul li {
-        margin: 0 10px;
-      }
-      section {
-        padding: 20px;
-      }
-      #home h1 {
-        font-size: 36px;
-        text-align: center;
-      }
-      #home p {
-        font-size: 24px;
-        text-align: center;
-      }
-      #gallery h2 {
-        font-size: 36px;
-        text-align: center;
-        margin: 20px 0;
-      }
-      #gallery img {
-        width: 1813px;
-        height: 2619px;
-        margin: 20px auto;
-        display: block;
-      }
-      #about p {
-        font-size: 24px;
-        text-align: center;
-      }
-      footer {
-        background-color: #7a5fb5;
-        padding: 10px;
-        text-align: center;
-      }
-      footer p {
-        font-size: 18px;
+    }
+
+    nav a {
         color: white;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="home">
-      <h1>Welcome to Sketchbook Archive</h1>
-      <p>WELCOME TO MY LITTLE PROJECT!</p>
-    </section>
-    <section id="gallery">
-      <h2>Sketch</h2>
-      <img src="SKETCH2023001.PNG" alt="Sketchbook Archive Image" />
-    </section>
-    <section id="about">
-      <p>Learn more about this website and the artist behind it.</p>
-    </section>
-    <footer>
-      <p>Copyright &copy; 2023 Sketchbook Archive</p>
-    </footer>
-  </body>
-</html>
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #7a41f4;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+
+    /* Media query for tablet devices */
+    @media only screen and (max-width: 768px) {
+        body {
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            width: 80%;
+        }
+    }
+
+    /* Media query for smartphone devices */
+    @media only screen and (max-width: 480px) {
+        body {
+            font-size: 1em;
+        }
+
+        nav ul {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        nav a {
+            padding: 10px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="earl.gif" alt="Retro 90s Gif"></h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h1>Welcome to Sketchbook Archive</h1>
+    <p>WELCOME TO MY LITTLE PROJECT!</p>
+  </section>
+  <section id="gallery">
+    <h2>Sketch</h2>
+    <h2><img src="SKETCH2023001.PNG" alt="FUCK YESH" width="1813" height="2619" style="background-color: #dddddd; padding: 10px; border-radius: 10px;"></h2>
+    <p>Explore previous and later sketches by using the left and right arrows!</p>
+  </section>
+  <section id="about">
+    <p>Learn more about this website and the artist behind it.</p>
+  </section>
+  <footer>
+    <p>Copyright &copy; 2023 Sketchbook Archive</p>
+  </
