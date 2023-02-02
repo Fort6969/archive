@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-    background-color: #9c7cb9;
-    font-family: "Arial", sans-serif;
-}
-header nav ul li a {
-    color: #f7f7f7;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-section#home {
-    text-align: center;
-    padding: 50px;
-    color: #f7f7f7;
-}
-section#gallery {
-    background-color: #7a5d95;
-    text-align: center;
-}
-section#gallery h2 img {
-    width: 1813px;
-    height: 2619px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #888888;
-}
-footer {
-    text-align: center;
-    padding: 30px;
-    color: #f7f7f7;
-}
-</style>
-</head>
-<body>
-<header><nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#about">About</a></li>
-</ul>
-</nav></header>
-<section id="home">
-<h1>Welcome to Sketchbook Archive</h1>
-<p>WELCOME TO MY LITTLE PROJECT!</p>
-</section>
-<section id="gallery">
-<h2>Sketch&nbsp;</h2>
-<h2><img src="SKETCH2023001.PNG" alt="FUCK YESH"/><br /><span style="font-size: 14px;">About Sketchbook Archive</span></h2>
-</section>
-<section id="about">
-<p>Learn more about this website and the artist behind it.</p>
-</section>
-<footer>
-<p>Copyright &copy; 2023 Sketchbook Archive</p>
-</footer>
-</body>
+  <head>
+    <style>
+      body {
+        background-color: #a067c7;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      header nav {
+        background-color: #7a5fb5;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      header nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      header nav ul li {
+        margin: 0 10px;
+      }
+      section {
+        padding: 20px;
+      }
+      #home h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+      #home p {
+        font-size: 24px;
+        text-align: center;
+      }
+      #gallery h2 {
+        font-size: 36px;
+        text-align: center;
+        margin: 20px 0;
+      }
+      #gallery img {
+        width: 1813px;
+        height: 2619px;
+        margin: 20px auto;
+        display: block;
+      }
+      #about p {
+        font-size: 24px;
+        text-align: center;
+      }
+      footer {
+        background-color: #7a5fb5;
+        padding: 10px;
+        text-align: center;
+      }
+      footer p {
+        font-size: 18px;
+        color: white;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <h1>Welcome to Sketchbook Archive</h1>
+      <p>WELCOME TO MY LITTLE PROJECT!</p>
+    </section>
+    <section id="gallery">
+      <h2>Sketch</h2>
+      <img src="SKETCH2023001.PNG" alt="Sketchbook Archive Image" />
+    </section>
+    <section id="about">
+      <p>Learn more about this website and the artist behind it.</p>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2023 Sketchbook Archive</p>
+    </footer>
+  </body>
 </html>
