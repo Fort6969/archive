@@ -1,31 +1,29 @@
-const currentImage = document.getElementById("currentImage");
-const prevButton = document.getElementById("prevButton");
-const nextButton = document.getElementById("nextButton");
-
+let currentImageIndex = 0;
 const images = [
   "SKETCH2023001.png",
   "SKETCH2023002.png",
   "SKETCH2023003.png",
-  // Add more image URLs here
+  // Add more images here
 ];
 
-let currentIndex = 0;
+const currentImage = document.getElementById("currentImage");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
 
-prevButton.innerHTML = '<i class="fas fa-arrow-left"></i>';
-nextButton.innerHTML = '<i class="fas fa-arrow-right"></i>';
+currentImage.src = images[currentImageIndex];
 
 prevButton.addEventListener("click", function() {
-  currentIndex = currentIndex - 1;
-  if (currentIndex < 0) {
-    currentIndex = images.length - 1;
+  currentImageIndex--;
+  if (currentImageIndex < 0) {
+    currentImageIndex = images.length - 1;
   }
-  currentImage.src = images[currentIndex];
+  currentImage.src = images[currentImageIndex];
 });
 
 nextButton.addEventListener("click", function() {
-  currentIndex = currentIndex + 1;
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
+  currentImageIndex++;
+  if (currentImageIndex >= images.length) {
+    currentImageIndex = 0;
   }
-  currentImage.src = images[currentIndex];
+  currentImage.src = images[currentImageIndex];
 });
