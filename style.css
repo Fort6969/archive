@@ -27,10 +27,33 @@ section {
 }
 
 #gallery img {
-  width: 1813px;
-  height: 2619px;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
   text-align: center;
+}
+
+/* Media Queries */
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  #gallery img {
+    width: 50%;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #gallery img {
+    width: 75%;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  #gallery img {
+    width: 100%;
+  }
 }
