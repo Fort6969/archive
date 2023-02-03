@@ -11,6 +11,9 @@ const images = [
 
 let currentIndex = 0;
 
+prevButton.innerHTML = '<i class="fas fa-arrow-left"></i>';
+nextButton.innerHTML = '<i class="fas fa-arrow-right"></i>';
+
 prevButton.addEventListener("click", function() {
   currentIndex = currentIndex - 1;
   if (currentIndex < 0) {
