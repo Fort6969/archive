@@ -1,29 +1,18 @@
 $(document).ready(function() {
-  // Initialize comic page
-  let currentPage = 1;
-  let totalPages = 10;
+  var currentPage = 1;
+  var numPages = 3;
 
-  updateComicPage(currentPage);
-
-  // Previous button event listener
   $("#prevButton").click(function() {
     if (currentPage > 1) {
       currentPage--;
-      updateComicPage(currentPage);
+      $("#comicImg").attr("src", "comic" + currentPage + ".png");
     }
   });
 
-  // Next button event listener
   $("#nextButton").click(function() {
-    if (currentPage < totalPages) {
+    if (currentPage < numPages) {
       currentPage++;
-      updateComicPage(currentPage);
+      $("#comicImg").attr("src", "comic" + currentPage + ".png");
     }
   });
-
-  function updateComicPage(pageNum) {
-    // Update comic page content using AJAX
-    // (In this example, we'll just set the content to the page number)
-    $("#comicPage").html(`<p>Page ${pageNum}</p>`);
-  }
 });
