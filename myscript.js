@@ -2,6 +2,16 @@ const currentImage = document.getElementById("currentImage");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 
+#earlGif {
+  width: 10%; /* or any other percentage value */
+  height: auto;
+}
+
+img[src$=".gif"] {
+  width: 10%; /* or any other percentage value */
+  height: auto;
+}
+
 const images = [
   "SKETCH2023001.png",
   "SKETCH2023002.png",
