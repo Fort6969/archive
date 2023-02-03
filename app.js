@@ -7,13 +7,13 @@ let pageNumber = 1;
 prevPage.addEventListener("click", function() {
   if (pageNumber > 1) {
     pageNumber--;
-    comicPage.src = `page${pageNumber}.jpg`;
+    comicPage.src = `page${pageNumber}.png`;
   }
 });
 
 nextPage.addEventListener("click", function() {
   if (pageNumber < 3) {
     pageNumber++;
-    comicPage.src = `page${pageNumber}.jpg`;
+    comicPage.src = `page${pageNumber}.png`;
   }
 });
