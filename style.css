@@ -1,64 +1,18 @@
-body {
-  background-color: purple;
-}
-
-header {
-  background-color: white;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  padding: 10px;
-}
-
-section {
-  padding: 20px;
-}
-
-img[src$=".gif"] {
-  width: 5%; /* or any other percentage value */
-  height: auto;
-}
-
-#home {
+#comic-container {
   text-align: center;
+  margin: 20px;
 }
 
-#gallery img {
-  max-width: 100%;
-  height: auto;
+#comic-image {
+  max-width: 80%;
 }
 
-footer {
+#navigation-container {
   text-align: center;
+  margin: 20px;
 }
 
-/* Media Queries */
-
-/* Desktop */
-@media only screen and (min-width: 992px) {
-  #gallery img {
-    width: 50%;
-  }
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  #gallery img {
-    width: 75%;
-  }
-}
-
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  #gallery img {
-    width: 100%;
-  }
+button {
+  padding: 10px 20px;
+  font-size: 18px;
 }
