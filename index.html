@@ -1,106 +1,18 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript" src="myscript.js"></script>
-
-  <style>
-    /* Default styles */
-    body {
-        background-color: purple;
-        color: white;
-        font-family: Arial, sans-serif;
-    }
-
-    header {
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav li {
-        padding: 10px;
-    }
-
-    nav a {
-        color: black;
-        text-decoration: none;
-    }
-
-    section {
-        padding: 20px;
-        text-align: center;
-    }
-
-    footer {
-        background-color: purple;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-    }
-
-    /* Media query for tablet devices */
-    @media only screen and (max-width: 991px) {
-        body {
-            font-size: 1.2em;
-        }
-
-        nav ul {
-            width: 80%;
-        }
-    }
-
-    /* Media query for smartphone devices */
-    @media only screen and (max-width: 767px) {
-        body {
-            font-size: 1em;
-        }
-
-        nav ul {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        nav li {
-            padding: 10px;
-        }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1><img src="earl.GIF" alt="Retro 90s Gif" style="width: 5%; height: auto;"></h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="home">
-    <h1>Welcome to Sketchbook Archive</h1>
-    <p>WELCOME TO MY LITTLE PROJECT!</p>
-  </section>
-  <section id="gallery">
-    <h2>Sketch</h2>
-      <button id="prevButton"><<<<<<</button>
-    <img id="currentImage" src="SKETCH2023001.png" alt="Image 1" style="max-width: 50%; height: auto;">
-  
-    <button id="nextButton">>>>>>>></button>
-  </section>
-  <section id="about">
-    <p>Learn more about this website and the artist behind it.</p>
-  </section>
+  <head>
+    <meta charset="UTF-8">
+    <title>Retro Webcomic</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="comic-container">
+      <img id="comic-image" src="comic-1.png">
+    </div>
+    <div id="navigation-container">
+      <button id="previous-button">Previous</button>
+      <button id="next-button">Next</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
