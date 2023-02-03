@@ -30,6 +30,16 @@ img[src$=".gif"] {
   width: 10%; /* or any other percentage value */
   height: auto;
 }
+#earlGif {
+  width: 10%; /* or any other percentage value */
+  height: auto;
+}
+
+img[src$=".gif"] {
+  width: 10%; /* or any other percentage value */
+  height: auto;
+}
+
 
 #home {
   text-align: center;
