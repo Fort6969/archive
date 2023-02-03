@@ -21,25 +21,11 @@ nav li {
 section {
   padding: 20px;
 }
-#earlGif {
-  width: 10%; /* or any other percentage value */
-  height: auto;
-}
 
 img[src$=".gif"] {
   width: 5%; /* or any other percentage value */
   height: auto;
 }
-#earlGif {
-  width: 5%; /* or any other percentage value */
-  height: auto;
-}
-
-img[src$=".gif"] {
-  width: 5%; /* or any other percentage value */
-  height: auto;
-}
-
 
 #home {
   text-align: center;
