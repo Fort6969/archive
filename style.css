@@ -1,33 +1,31 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 #comicContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #comicPage {
-  max-width: 80%;
+  text-align: center;
+}
+
+#comicImg {
+  max-width: 100%;
   height: auto;
 }
 
 #navButtons {
   display: flex;
   justify-content: center;
-  padding: 1em 0;
+  margin-top: 20px;
 }
 
 button {
-  font-size: 1.2em;
-  padding: 0.5em 1em;
-  margin: 0 0.5em;
-  border: 1px solid #333;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
   border-radius: 5px;
-  background-color: #fff;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
 }
