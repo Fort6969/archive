@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Retro Webcomic Site</title>
-  </head>
-  <body>
-    <div class="container">
-      <img id="comic-page" src="page1.png" alt="Webcomic Page">
-      <button id="prev-page">Previous</button>
-      <button id="next-page">Next</button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <title>Retro Webcomic</title>
+</head>
+<body>
+  <div id="comicContainer">
+    <div id="comicPage">
+      <!-- Comic page content goes here -->
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <div id="navButtons">
+    <button id="prevButton">Prev</button>
+    <button id="nextButton">Next</button>
+  </div>
+</body>
 </html>
