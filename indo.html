@@ -5,24 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style.css">
- <link rel="stylesheet" type="text/css" href="styleindo.css">
   <title>My Cool Page</title>
+ <script src="jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var images;
+      var currentImageIndex = 0;
+
+      function showImage() {
+        $("#image").attr("src", images[currentImageIndex]);
+      }
+
+      $.ajax({
+        type: "GET",
+        url: "get_images.php",
+        success: function(data) {
+          images = data;
+          showImage();
+        }
+      });
+
+      $("#previous").click(function() {
+        currentImageIndex--;
+        if (currentImageIndex < 0) {
+          currentImageIndex = images.length - 1;
+        }
+        showImage();
+      });
+
+      $("#next").click(function() {
+        currentImageIndex++;
+        if (currentImageIndex >= images.length) {
+          currentImageIndex = 0;
+        }
+        showImage();
+      });
+    });
+  </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Welcome to My Cool Page</h1>
-    <p>Here you will find all sorts of cool and interesting things.</p>
-  </main>
-
-  <footer>
-    <p>Copyright © 2023 by My Cool Page</p>
-  </footer>
+  <img id="image" />
+  <button id="previous">Previous</button>
+  <button id="next">Next</button>
 </body>
 </html>
